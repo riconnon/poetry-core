@@ -326,6 +326,7 @@ class SdistBuilder(Builder):
 
         # Include project files
         additional_files.add(Path("pyproject.toml"))
+        additional_files.add(Path("poetry.lock"))
 
         # add readme if it is specified
         if "readme" in self._poetry.local_config:
